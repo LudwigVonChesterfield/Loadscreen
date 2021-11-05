@@ -1,0 +1,100 @@
+html {
+	color: #A69CAC;
+	background: #161B33;
+	font-family: monospace, monospace;
+}
+
+a {
+	color: #F1DAC4;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen
+	and (max-width: 50em)
+{
+	.container {
+		flex-direction: column;
+	}
+}
+
+.container div {
+	width: 100%;
+	padding: 5px;
+	/* border: 1px solid black; */
+}
+
+.breakline-through {
+  display: flex;
+  flex-direction: row;
+}
+.breakline-through:before, .breakline-through:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.breakline-through:before {
+  margin-right: 10px
+}
+.breakline-through:after {
+  margin-left: 10px
+}
+
+.breakline {
+  display: flex;
+  flex-direction: row;
+}
+.breakline:before, .breakline:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+
+.name {
+	font-size: 24px;
+}
+
+.quote {
+	margin-left: auto;
+	text-align: right;
+	font-style: italic;
+}
+
+.quote_author {
+	margin-left: auto;
+	text-align: right;
+}
+
+.center {
+  position: relative;
+  height: 100vh;
+}
+
+.center p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+a.hidden-link {
+	text-decoration: none;
+}
+a.hidden-link:hover {
+	text-decoration: underline;
+	color #F1DAC4;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.hidden:hover {
+	visibility: visible;
+}
